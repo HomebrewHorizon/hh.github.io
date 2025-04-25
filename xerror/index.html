@@ -13,7 +13,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(0,0,0,1) 100%);
+            background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(0,0,0,1) 80%);
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -58,6 +58,25 @@
         .buttons a:hover {
             background: rgba(255, 255, 255, 0.5);
         }
+
+        .back-button {
+            margin-top: 40px;
+        }
+
+        .back-button a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .back-button a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -78,6 +97,10 @@
         <a href="download.html">Download Firmware</a>
         <a href="setup.html">Installation Guide</a>
         <a href="support.html">Support & Updates</a>
+    </div>
+
+    <div class="back-button">
+        <a href="https://homebrewhorizon.github.io">⬅ Back to HomebrewHorizon</a>
     </div>
 </body>
 </html>
