@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomebrewHorizon - 403 Forbidden</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #5DADE2; /* Water color */
+            overflow: hidden;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 20%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4MCIgaGVpZ2h0PSIxMjgiIHZpZXdCb3g9IjAgMCAxMjgwIDEyOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMTI4aDEyODBWMGwtNjQwIDY0MEwweiIgZmlsbD0iI2ZmZiIgZmlsCtbLW9wYWNpdHk9Ii40Ii8+CjxwYXRoIGQ9Ik0xMjgwIDEyOEgwVjBsNjQwIDY0MGw2NDAtNjQweiIgZmlsbD0iI2ZmZiIgZmlsCtbLW9wYWNpdHk9Ii42Ii8+CjxwYXRoIGQ9Ik0wIDEyOGgxMjgwVjBsLTY0MCA2NDBMMHoiIGZpbGw9IiNmZmYiIGZpbCtbLW9wYWNpdHk9Ii44IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IHNjcmVlbiIvPgo8L3N2Zz4K') repeat-x;
+            animation: wave-animation 10s linear infinite;
+        }
+
+        @keyframes wave-animation {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background: #217dbb;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #1a6392;
+        }
+    </style>
 </head>
 <body>
     <h1>Please Hold.</h1>
     <h2>Website In-Development.</h2>
     <h3>403 - Forbidden - HomebrewHorizon</h3>
-    <button>ClickMe!</button>
+    <button>Click Me!</button>
+    
+    <div class="wave"></div>
 </body>
 </html>
-
