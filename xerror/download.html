@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download XError Firmware</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(128,128,128,1) 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .download-options {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        select, input {
+            font-size: 16px;
+            padding: 5px;
+            margin-top: 5px;
+            width: 200px;
+        }
+
+        .download-button, .wad-button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .download-button:hover, .wad-button:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .warning {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 0, 0, 0.7);
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Download XError Firmware</h1>
+    <p>Select your Wii region and optional bundle:</p>
+
+    <div class="download-options">
+        <form action="your-download-link" method="GET">
+            <label for="region">Wii Region:</label>
+            <select id="region" name="region">
+                <option value="U">USA (3.5-4.3)</option>
+                <option value="E">Europe (3.5-4.3)</option>
+                <option value="J">Japan (3.5-4.3)</option>
+                <option value="K">Korea (3.5-4.3)</option>
+            </select>
+
+            <label for="fls-config">Bundle FLS Media Config File:</label>
+            <input type="checkbox" id="fls-config" name="fls-config" value="yes">
+
+            <button type="submit" class="download-button">Download XError</button>
+        </form>
+
+        <div class="warning">
+            ⚠️ DANGER: This WAD can brick your Wii. Make sure you have:
+            <ul>
+                <li>✅ BootMii NAND Backup</li>
+                <li>✅ BootMii Installed</li>
+                <li>✅ Priiloader Installed</li>
+            </ul>
+            Proceed with caution!
+        </div>
+
+        <a href="/wads/" class="wad-button">Bundle Wii Version WAD</a>
+    </div>
+</body>
+</html>
