@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Settings>
+        <MediaType>Video</MediaType>
+        <Resolution>1920x1080</Resolution>
+        <Bitrate>5000</Bitrate>
+        <Format>MP4</Format>
+        <Audio>
+            <Codec>AAC</Codec>
+            <Bitrate>320</Bitrate>
+            <Channels>2</Channels>
+        </Audio>
+    </Settings>
+</Configuration>

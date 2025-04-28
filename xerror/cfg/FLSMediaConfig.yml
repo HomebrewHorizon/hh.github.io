@@ -1,0 +1,9 @@
+Settings:
+  MediaType: Video
+  Resolution: "1920x1080"
+  Bitrate: 5000
+  Format: MP4
+  Audio:
+    Codec: AAC
+    Bitrate: 320
+    Channels: 2
