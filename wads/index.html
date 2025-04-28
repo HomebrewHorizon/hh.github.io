@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WADs Repository</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(128,128,128,1) 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .warning {
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(255, 0, 0, 0.7);
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .wad-list {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .wad-list a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px 0;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .wad-list a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .back-button {
+            margin-top: 20px;
+        }
+
+        .back-button a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .back-button a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>WADs Repository</h1>
+    <div class="container">
+        <p>Browse and download WADs for your system.</p>
+
+        <div class="warning">
+            ⚠️ **DANGER:** Installing WADs incorrectly can brick your Wii!  
+            Ensure you have:
+            <ul>
+                <li>✅ **BootMii NAND Backup**</li>
+                <li>✅ **BootMii Installed**</li>
+                <li>✅ **Priiloader Installed**</li>
+            </ul>
+            Proceed with caution!
+        </div>
+
+        <div class="wad-list">
+            <h2>Available WADs:</h2>
+            <a href="Wii System Menu 3.5K.wad">Wii System Menu 3.5K</a>
+            <a href="Wii System Menu 4.0J.wad">Wii System Menu 4.0J</a>
+            <a href="Wii System Menu 4.0U.wad">Wii System Menu 4.0U</a>
+            <a href="Wii System Menu 4.0E.wad">Wii System Menu 4.0E</a>
+        </div>
+    </div>
+
+    <div class="back-button">
+        <a href="https://homebrewhorizon.github.io">⬅ Back to HomebrewHorizon</a>
+    </div>
+</body>
+</html>
