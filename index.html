@@ -56,7 +56,7 @@
             font-size: 1rem;
             padding: 5px;
             background: rgba(255, 255, 255, 0.3);
-            border-radius: 50px; /* Bubble effect */
+            border-radius: 50px;
             text-align: center;
             transition: 0.3s;
         }
@@ -86,6 +86,7 @@
             100% { transform: translateX(-100%); }
         }
 
+        /* Bubbles effect */
         .bubbles {
             position: absolute;
             width: 100%;
@@ -108,12 +109,23 @@
             0% { transform: translateY(0) scale(1); opacity: 1; }
             100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
         }
+
+        .status-container {
+            width: 100%;
+            height: 300px;
+            border: none;
+            display: block;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>Welcome to HomebrewHorizon</h1>
         <h2>Innovative tools for your homebrew needs</h2>
+
+        <!-- Embedded status page -->
+        <iframe class="status-container" src="https://homebrewhorizon.github.io/status"></iframe>
     </div>
 
     <div class="headlines">
@@ -137,3 +149,4 @@
     </div>
 </body>
 </html>
+
