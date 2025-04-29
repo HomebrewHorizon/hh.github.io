@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #5DADE2, #217dbb, #14568c);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .status-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .status-item {
+            font-size: 18px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .status-developing {
+            background-color: #ffc107;
+        }
+
+        .status-halted {
+            background-color: #dc3545;
+        }
+
+        .status-working {
+            background-color: #28a745;
+        }
+
+        .downtime-panel {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📡 Service Status Dashboard</h1>
+        <p>Check the live status of your services.</p>
+
+        <ul class="status-list" id="statusPanel">
+            <!-- Statuses will be loaded dynamically -->
+        </ul>
+
+        <div class="downtime-panel">
+            <h2>📉 Downtime Records</h2>
+            <ul id="downtimePanel">
+                <!-- Downtime history will be loaded dynamically -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Example service status data
+        const services = [
+            {"name": "AeroRadio", "status": "Developing"},
+            {"name": "LinkMii", "status": "Developing and Beta Testing"},
+            {"name": "PySys", "status": "Halted"},
+            {"name": "GoSys", "status": "Developing"},
+            {"name": "EPU (Wii)", "status": "Almost Done!"},
+            {"name": "WiiBoot", "status": "Developing"},
+            {"name": "DSiLib", "status": "Halted"},
+            {"name": "EPU (Wii U)", "status": "Developing"},
+            {"name": "BootU", "status": "Developing"},
+            {"name": "Wii cLIB", "status": "Working Properly!"},
+            {"name": "Wii ExS", "status": "Working Properly!"}
+        ];
+
+        // Example downtime records
+        const downtimeRecords = [
+            {"service": "Wii cLIB", "date": "04/01/2025", "duration": "5h"},
+            {"service": "LinkMii", "date": "22/04/2025", "reason": "PatcherHotfix"}
+        ];
+
+        // Function to load service status
+        function loadServiceStatus() {
+            const statusPanel = document.getElementById("statusPanel");
+
+            services.forEach(service => {
+                let statusItem = document.createElement("li");
+                statusItem.className = "status-item " +
+                    (service.status.includes("Developing") ? "status-developing" 
+                    : service.status.includes("Halted") ? "status-halted" 
+                    : "status-working");
+                statusItem.textContent = `${service.name}: ${service.status}`;
+                statusPanel.appendChild(statusItem);
+            });
+        }
+
+        // Function to load downtime records
+        function loadDowntimeRecords() {
+            const downtimePanel = document.getElementById("downtimePanel");
+
+            downtimeRecords.forEach(record => {
+                let recordItem = document.createElement("li");
+                recordItem.textContent = `${record.service} - ${record.date} (${record.duration || record.reason})`;
+                downtimePanel.appendChild(recordItem);
+            });
+        }
+
+        loadServiceStatus();
+        loadDowntimeRecords();
+    </script>
+
+</body>
+</html>
