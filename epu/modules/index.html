@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download EPU Modules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #5DADE2, #217dbb, #14568c);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .download-link {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            text-decoration: none;
+            color: yellow;
+        }
+
+        .download-link:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Download EPU Modules</h1>
+        <p>Select a module below to find the download link.</p>
+
+        <select id="moduleList">
+            <option value="">-- Select a Module --</option>
+        </select>
+
+        <a id="downloadLink" class="download-link" href="#" target="_blank">⬇ Download</a>
+    </div>
+
+    <script>
+        // Load module data from JSON
+        fetch("modules.json")
+            .then(response => response.json())
+            .then(data => {
+                const moduleList = document.getElementById("moduleList");
+
+                data.modules.forEach(module => {
+                    let option = document.createElement("option");
+                    option.value = module.download;
+                    option.textContent = module.name;
+                    moduleList.appendChild(option);
+                });
+
+                moduleList.addEventListener("change", () => {
+                    const selectedDownload = moduleList.value;
+                    const downloadLink = document.getElementById("downloadLink");
+
+                    if (selectedDownload) {
+                        downloadLink.href = selectedDownload;
+                        downloadLink.style.display = "inline-block";
+                    } else {
+                        downloadLink.style.display = "none";
+                    }
+                });
+            })
+            .catch(error => console.error("Failed to load JSON:", error));
+    </script>
+
+</body>
+</html>

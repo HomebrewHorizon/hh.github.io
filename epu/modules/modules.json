@@ -1,0 +1,8 @@
+{
+    "modules": [
+        {"name": "Core Processor", "download": "downloads/core_processor.elf"},
+        {"name": "Graphics Engine", "download": "downloads/graphics_engine.elf"},
+        {"name": "Sound Processor", "download": "downloads/sound_processor.elf"},
+        {"name": "Input Manager", "download": "downloads/input_manager.elf"}
+    ]
+}
