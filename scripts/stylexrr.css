@@ -1,0 +1,72 @@
+ body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(128,128,128,1) 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .description {
+            max-width: 600px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .firmware-details {
+            max-width: 600px;
+            margin-top: 15px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 15px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .buttons a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .back-button {
+            margin-top: 40px;
+        }
+
+        .back-button a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .back-button a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
