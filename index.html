@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomebrewHorizon</title>
+    <title>HomebrewHorizon - Language Selection</title>
     
     <!-- Link external CSS file -->
-    <link rel="stylesheet" href="scripts/stylehh.css">
+    <link rel="stylesheet" href="/scripts/stylehh.css">
 </head>
 <body>
     <div class="content">
         <h1>Welcome to HomebrewHorizon</h1>
-        <h2>Innovative tools for your homebrew needs</h2>
+        <h2>Please select your language:</h2>
 
-        <!-- Navigation Buttons -->
+        <!-- Language Selection Menu -->
         <div class="button-container">
-            <a href="https://homebrewhorizon.github.io/articles" class="nav-button">📄 Go to Articles</a>
-            <a href="https://homebrewhorizon.github.io/status" class="nav-button">📡 Go to Status</a>
-            <a href="https://homebrewhorizon.github.io/download" class="nav-button"> Go to Download</a>
+            <a href="/lang/hr.html" class="nav-button">🇭🇷 Hrvatski (Croatian)</a>
+            <a href="/lang/sk.html" class="nav-button">🇸🇰 Slovenčina (Slovak)</a>
+            <a href="/lang/en.html" class="nav-button">🇬🇧 English</a>
+            <a href="/lang/de.html" class="nav-button">🇩🇪 Deutsch (German)</a>
         </div>
     </div>
 
     <div class="wave"></div>
     
-    <!-- Bubble animation script -->
-    <script> for (let i = 0; i < 20; i++) {
-                let bubble = document.createElement("div");
-                bubble.className = "bubble";
-                bubble.style.left = Math.random() * 100 + "vw";
-                bubble.style.animationDuration = Math.random() * 3 + 2 + "s";
-                document.querySelector(".bubbles").appendChild(bubble);
-            }  </script>
+    <!-- Bubble animation script REMOVED -->
 </body>
 </html>
