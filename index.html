@@ -23,9 +23,7 @@
 
         .content {
             flex: 1;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            text-align: center;
         }
 
         h1 {
@@ -33,24 +31,34 @@
             text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
         }
 
+        .side-panels {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            top: 20px;
+            padding: 0 20px;
+        }
+
         .panel {
             width: 250px;
             background: rgba(255, 255, 255, 0.2);
             padding: 15px;
             border-radius: 8px;
-            position: relative;
+            text-align: center;
         }
 
         .headlines {
-            position: absolute;
-            right: 20px;
-            top: 20px;
+            order: 2;
+        }
+
+        .status-panel {
+            order: 1;
         }
 
         .headlines h2, .status-panel h2 {
             font-size: 1.5rem;
             margin-bottom: 10px;
-            text-align: center;
         }
 
         .headlines ul {
@@ -79,24 +87,18 @@
             font-weight: bold;
         }
 
-        .status-panel {
-            position: absolute;
-            left: 20px;
-            top: 20px;
-            width: 250px;
-            height: 300px;
-        }
-
         .download-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 20px;
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 15px;
             font-size: 18px;
             text-decoration: none;
             color: white;
             background: rgba(255, 255, 255, 0.3);
             border-radius: 8px;
             transition: 0.3s;
+            text-align: center;
         }
 
         .download-button:hover {
@@ -146,19 +148,24 @@
     <div class="content">
         <h1>Welcome to HomebrewHorizon</h1>
         <h2>Innovative tools for your homebrew needs</h2>
-
-        <!-- Embedded status page, now resized and positioned -->
-        <iframe class="status-panel" src="https://homebrewhorizon.github.io/status"></iframe>
-
-        <!-- Download Button -->
-        <a href="https://homebrewhorizon.github.io/download" class="download-button">⬇ Go to Downloads</a>
     </div>
 
-    <div class="headlines panel">
-        <h2>Latest Headlines</h2>
-        <ul>
-            <li><a href="articles/arti0000.html">🚀 Clickable Headlines Feature Added!</a></li>
-        </ul>
+    <div class="side-panels">
+        <!-- Embedded status page, now properly positioned -->
+        <div class="panel status-panel">
+            <h2>Service Status</h2>
+            <iframe src="https://homebrewhorizon.github.io/status" width="100%" height="250" style="border: none;"></iframe>
+
+            <!-- Download Button -->
+            <a href="https://homebrewhorizon.github.io/download" class="download-button">⬇ Go to Downloads</a>
+        </div>
+
+        <div class="panel headlines">
+            <h2>Latest Headlines</h2>
+            <ul>
+                <li><a href="articles/arti0000.html">🚀 Clickable Headlines Feature Added!</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="wave"></div>
