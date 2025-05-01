@@ -23,6 +23,9 @@
 
         .content {
             flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
         }
 
         h1 {
@@ -30,17 +33,21 @@
             text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
         }
 
-        .headlines {
+        .panel {
             width: 250px;
             background: rgba(255, 255, 255, 0.2);
             padding: 15px;
             border-radius: 8px;
+            position: relative;
+        }
+
+        .headlines {
             position: absolute;
             right: 20px;
             top: 20px;
         }
 
-        .headlines h2 {
+        .headlines h2, .status-panel h2 {
             font-size: 1.5rem;
             margin-bottom: 10px;
             text-align: center;
@@ -70,6 +77,14 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
+        }
+
+        .status-panel {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 250px;
+            height: 300px;
         }
 
         .download-button {
@@ -125,14 +140,6 @@
             0% { transform: translateY(0) scale(1); opacity: 1; }
             100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
         }
-
-        .status-container {
-            width: 100%;
-            height: 300px;
-            border: none;
-            display: block;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
@@ -140,14 +147,14 @@
         <h1>Welcome to HomebrewHorizon</h1>
         <h2>Innovative tools for your homebrew needs</h2>
 
-        <!-- Embedded status page -->
-        <iframe class="status-container" src="https://homebrewhorizon.github.io/status"></iframe>
+        <!-- Embedded status page, now resized and positioned -->
+        <iframe class="status-panel" src="https://homebrewhorizon.github.io/status"></iframe>
 
         <!-- Download Button -->
         <a href="https://homebrewhorizon.github.io/download" class="download-button">⬇ Go to Downloads</a>
     </div>
 
-    <div class="headlines">
+    <div class="headlines panel">
         <h2>Latest Headlines</h2>
         <ul>
             <li><a href="articles/arti0000.html">🚀 Clickable Headlines Feature Added!</a></li>
