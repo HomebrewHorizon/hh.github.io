@@ -49,14 +49,10 @@
         }
 
         .headlines {
-            order: 2;
-        }
-
-        .status-panel {
             order: 1;
         }
 
-        .headlines h2, .status-panel h2 {
+        .headlines h2 {
             font-size: 1.5rem;
             margin-bottom: 10px;
         }
@@ -151,20 +147,16 @@
     </div>
 
     <div class="side-panels">
-        <!-- Embedded status page, now properly positioned -->
-        <div class="panel status-panel">
-            <h2>Service Status</h2>
-            <iframe src="https://homebrewhorizon.github.io/status" width="100%" height="250" style="border: none;"></iframe>
-
-            <!-- Download Button -->
-            <a href="https://homebrewhorizon.github.io/download" class="download-button">⬇ Go to Downloads</a>
-        </div>
-
+        <!-- Headlines moved to where the status embed was -->
         <div class="panel headlines">
             <h2>Latest Headlines</h2>
             <ul>
+                <li><a href="articles/arti0001.html">Pysys Getting a recode!</a></li>
                 <li><a href="articles/arti0000.html">🚀 Clickable Headlines Feature Added!</a></li>
             </ul>
+
+            <!-- Download Button now sits under headlines -->
+            <a href="https://homebrewhorizon.github.io/download" class="download-button">⬇ Go to Downloads</a>
         </div>
     </div>
 
@@ -182,4 +174,3 @@
     </div>
 </body>
 </html>
-
