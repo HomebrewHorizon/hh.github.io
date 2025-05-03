@@ -17,6 +17,6 @@
         {"name": "Intel Centrino Duo", "download": "downloads/centrino-duo.rar"},
         {"name": "Intel Centrino Atom", "download": "downloads/centrino-atom.rar"},
         {"name": "Intel Centrino vPro", "download": "downloads/centrino-vpro.rar"},
-        {"name": "Intel Centrino 2", "download": "downloads/centrino2.rar"},
+        {"name": "Intel Centrino 2", "download": "downloads/centrino2.rar"}
     ]
 }
