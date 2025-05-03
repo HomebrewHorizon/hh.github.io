@@ -22,7 +22,19 @@
         {"name": "Intel Centrino vPro", "download": "downloads/centrino-vpro.rar"},
         {"name": "Intel Centrino 2", "download": "downloads/centrino2.rar"},
         {"name": "Intel Centrino 2 vPro", "download": "downloads/centrino2-vpro.rar"},
-        {"name": "Intel Core i3 2010", "download": "downloads/corei3.rar"}
+        {"name": "Intel Core i3 2010", "download": "downloads/corei3.rar"},
+        {"name": "Intel Core i5 2011", "download": "downloads/corei5.rar"},
+        {"name": "Intel Core i7 2011", "download": "downloads/corei7.rar"},
+        {"name": "Intel Atom 2012", "download": "downloads/atom-2012.rar"},
+        {"name": "Intel Xeon 2012", "download": "downloads/xeon-2012.rar"},
+        {"name": "Intel Itanium 2013", "download": "downloads/itanium-2013.rar"},
+        {"name": "Intel Centrino 2014", "download": "downloads/centrino-2014.rar"},
+        {"name": "Intel Centrino vPro 2014", "download": "downloads/centrino-vpro-2014.rar"},
+        {"name": "Intel Centrino 2 2015", "download": "downloads/centrino2-2015.rar"},
+        {"name": "Intel Centrino 2 vPro 2015", "download": "downloads/centrino2-vpro-2015.rar"},
+        {"name": "Intel Core i5 2016", "download": "downloads/corei5-2016.rar"},
+        {"name": "Intel Core UltraBook", "download": "downloads/core-ultrabook.rar"}
+
     ]
 }
 
