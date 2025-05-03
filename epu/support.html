@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPU Support & Troubleshooting</title>
+    <script>
+        // Function to fetch and populate dropdown
+        async function loadEPU() {
+            const response = await fetch('epu.json');
+            const epus = await response.json();
+            const dropdown = document.getElementById('epuSelect');
+
+            epus.forEach(epu => {
+                let option = document.createElement('option');
+                option.value = epu.serial;
+                option.textContent = epu.name;
+                dropdown.appendChild(option);
+            });
+        }
+
+        // Function to check serial number
+        function verifySerial() {
+            const selectedEPU = document.getElementById('epuSelect').value;
+            const enteredSerial = document.getElementById('serialInput').value;
+
+            if (enteredSerial === selectedEPU) {
+                alert('Serial number verified!');
+            } else {
+                alert('Invalid serial number!');
+            }
+        }
+
+        // Load EPUs on page load
+        window.onload = loadEPU;
+    </script>
+</head>
+<body>
+
+    <h1>EPU Support & Troubleshooting</h1>
+
+    <label for="epuSelect">Select EPU:</label>
+    <select id="epuSelect"></select>
+
+    <br><br>
+
+    <label for="serialInput">Enter Serial Number:</label>
+    <input type="text" id="serialInput">
+
+    <br><br>
+
+    <button onclick="verifySerial()">Verify</button>
+
+</body>
+</html>
