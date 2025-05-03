@@ -2,9 +2,21 @@
     "epus": [
         {"name": "Intel Pentium", "download": "downloads/pentium.rar"},
         {"name": "Intel Pentium D", "download": "downloads/pentiumD.rar"},
-        {"name": "Intel Pentium D Dual-Core", "download": "downloads/pentiumD-dual.rar"},
         {"name": "Intel Core Solo", "download": "downloads/core-solo.rar"},
         {"name": "Intel Core Duo", "download": "downloads/core-duo.rar"},
-        {"name": "Intel Core 2 Duo", "download": "downloads/core2-duo.rar"}
+        {"name": "Intel Core 2 Duo", "download": "downloads/core2-duo.rar"},
+        {"name": "Intel Core 2 Quad", "download": "downloads/core2-quad.rar"},
+        {"name": "Intel Core 2 Extreme", "download": "downloads/core2-extreme.rar"},
+        {"name": "Intel Atom", "download": "downloads/atom.rar"},
+        {"name": "Intel vPro", "download": "downloads/vpro.rar"},
+        {"name": "Intel Xeon", "download": "downloads/xeon.rar"},
+        {"name": "Intel VIIV", "download": "downloads/viiv.rar"},
+        {"name": "Intel Core 2 Duo VIIV", "download": "downloads/core2-duo-viiv.rar"},
+        {"name": "Intel Core 2 vPro", "download": "downloads/core2-vpro.rar"}
+        {"name": "Intel Centrino", "download": "downloads/centrino.rar"},
+        {"name": "Intel Centrino Duo", "download": "downloads/centrino-duo.rar"},
+        {"name": "Intel Centrino Atom", "download": "downloads/centrino-atom.rar"},
+        {"name": "Intel Centrino vPro", "download": "downloads/centrino-vpro.rar"},
+        {"name": "Intel Centrino 2", "download": "downloads/centrino2.rar"}
     ]
 }
