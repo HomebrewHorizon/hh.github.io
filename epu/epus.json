@@ -1,0 +1,8 @@
+{
+    "epus": [
+        {"name": "Intel Pentium", "download": "downloads/pentium.rar"},
+        {"name": "Intel Pentium D", "download": "downloads/pentiumD.rar"},
+        {"name": "Intel Pentium D Dual-Core", "download": "downloads/pentiumD-dual.rar"},
+        {"name": "Intel Core Solo", "download": "downloads/core-solo.rar"}
+    ]
+}
