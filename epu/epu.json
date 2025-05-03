@@ -21,7 +21,8 @@
         {"name": "Intel Centrino Atom", "download": "downloads/centrino-atom.rar"},
         {"name": "Intel Centrino vPro", "download": "downloads/centrino-vpro.rar"},
         {"name": "Intel Centrino 2", "download": "downloads/centrino2.rar"},
-        {"name": "Intel Centrino 2 vPro", "download": "downloads/centrino2-vpro.rar"}
+        {"name": "Intel Centrino 2 vPro", "download": "downloads/centrino2-vpro.rar"},
+        {"name": "Intel Core i3 2010", "download": "downloads/corei3.rar"}
     ]
 }
 
