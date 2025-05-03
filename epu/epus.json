@@ -12,7 +12,7 @@
         {"name": "Intel Xeon", "download": "downloads/xeon.rar"},
         {"name": "Intel VIIV", "download": "downloads/viiv.rar"},
         {"name": "Intel Core 2 Duo VIIV", "download": "downloads/core2-duo-viiv.rar"},
-        {"name": "Intel Core 2 vPro", "download": "downloads/core2-vpro.rar"}
+        {"name": "Intel Core 2 vPro", "download": "downloads/core2-vpro.rar"},
         {"name": "Intel Centrino", "download": "downloads/centrino.rar"},
         {"name": "Intel Centrino Duo", "download": "downloads/centrino-duo.rar"},
         {"name": "Intel Centrino Atom", "download": "downloads/centrino-atom.rar"},
