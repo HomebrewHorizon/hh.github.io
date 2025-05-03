@@ -3,6 +3,8 @@
         {"name": "Intel Pentium", "download": "downloads/pentium.rar"},
         {"name": "Intel Pentium D", "download": "downloads/pentiumD.rar"},
         {"name": "Intel Pentium D Dual-Core", "download": "downloads/pentiumD-dual.rar"},
-        {"name": "Intel Core Solo", "download": "downloads/core-solo.rar"}
+        {"name": "Intel Core Solo", "download": "downloads/core-solo.rar"},
+        {"name": "Intel Core Duo", "download": "downloads/core-duo.rar"},
+        {"name": "Intel Core 2 Duo", "download": "downloads/core2-duo.rar"}
     ]
 }
